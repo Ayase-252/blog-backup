@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Ayase-252's wonderland
 subtitle:
-description:
-author: John Doe
-language:
-timezone:
+description: I came to see you. It was not easy because you were so far away.
+author: Qy Deng
+language: zh-Hans
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://ayase.moe
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -77,8 +77,11 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/Ayase-252/Ayase-252.github.io.git
 
+
+google_analytics: UA-85089083-2
 # 
 # -----------------------------------
 #
@@ -389,8 +392,8 @@ font:
 
 # MathJax Support
 mathjax:
-  enable: false
-  per_page: false
+  enable: true
+  per_page: true
   cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
 # Han Support docs: https://hanzi.pro/
