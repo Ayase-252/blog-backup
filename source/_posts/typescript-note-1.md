@@ -3,7 +3,7 @@ title: TypeScript初探（I）
 tags:
   - TypeScript
 date: 2017-01-29 18:42:25
-categories: "Techno"
+categories: "Technology"
 ---
 
 

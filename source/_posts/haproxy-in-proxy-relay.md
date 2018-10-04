@@ -4,7 +4,7 @@ tags:
   - Haproxy
   - Proxy Relay
 date: 2017-02-01 15:46:07
-categories: "Tutorial"
+categories: Tutorial
 ---
 
 

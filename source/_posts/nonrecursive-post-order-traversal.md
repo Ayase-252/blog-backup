@@ -1,7 +1,7 @@
 ---
 title: 非递归的二叉树后序遍历
 date: 2016-10-28 11:21:03
-categories: "Techno"
+categories: Technology
 tags:
   - Algorithm
   - Binary Tree

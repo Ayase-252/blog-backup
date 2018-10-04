@@ -1,7 +1,7 @@
 ---
 title: ES6在Babel转译下的循环import问题
 date: 2016-10-02 19:34:31
-categories: "Techno"
+categories: Technology
 tags:
   - ES6
   - Babel

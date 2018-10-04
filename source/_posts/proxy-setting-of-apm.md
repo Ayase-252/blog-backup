@@ -1,7 +1,7 @@
 ---
 title: 设置Atom的包管理器——apm的代理
 date: 2017-03-11 18:27:15
-categories: "Techno"
+categories: Technology
 tags:
   - Atom
 ---

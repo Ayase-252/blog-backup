@@ -1,6 +1,6 @@
 ---
 title: 机器学习常用概率分布速查
-categories: Techno
+categories: Technology
 tags:
   - Machine Learning
   - Probability
@@ -23,11 +23,11 @@ mathjax: true
 
 ### 二项分布与伯努利分布
 
-**二项分布**是$n$次独立的是非实验成功的个数$k$服从的分布。记为$k \sim \text{Bin}(n,\theta)$。其中$\theta$是单次实验成功的概率。
+**二项分布**是\\(n\\)次独立的是非实验成功的个数\\(k\\)服从的分布。记为\\(k \sim \text{Bin}(n,\theta)\\)。其中\\(\theta\\)是单次实验成功的概率。
 
 概率质量函数（pmf）：
 $$
-Bin(k|n,\theta)=\left(\begin{array}{c}n\\k\end{array}\right)\theta^k(1-\theta)^{n-k}
+Bin(k|n,\theta)=\left(\begin{array}{c}n\\\\k\end{array}\right)\theta^k(1-\theta)^{n-k}
 $$
 均值：$\text{mean}=\theta$
 方差：$\text{var}=n\theta(1-\theta)$
@@ -36,16 +36,16 @@ $n=1$时的二项分布称为**伯努利分布**，设随机变量$X$服从伯�
 
 概率质量函数：
 $$
-\text{Ber}(x|\theta)=\theta^{\mathbb{I}(x=1)}(1-\theta)^{\mathbb{I}(x=0)}
+\\text{Ber}(x|\\theta)=\\theta^{\\mathbb{I}(x=1)}(1-\\theta)^{\\mathbb{I}(x=0)}
 $$
 其中：
 $$
-\mathbb{I}(x=n) = \left\{
-\begin{eqnarray*}
-&&1 \quad x=n \\
-&&0 \quad \text{otherwise}
-\end{eqnarray*}
-\right.
+\\mathbb{I}(x=n) = \\left\\{
+\\begin{eqnarray\*}
+&&1 \\quad x=n \\\\
+&&0 \\quad \\text{otherwise}
+\\end{eqnarray\*}
+\\right.
 $$
 
 均值：$\text{mean}=\theta$
@@ -54,11 +54,11 @@ $$
 {% note info %}
 引入$\mathbb{I}$是为了简化公式的表示。比如这里伯努利函数的pmf可以表示为：
 $$
-\text{Ber}(k|\theta) = \left\{
-\begin{eqnarray*}
-&&\theta \quad &x=1 \\
+\text{Ber}(k|\theta) = \left\\{
+\begin{eqnarray\*}
+&&\theta \quad &x=1 \\\\
 &&1-\theta \quad &x=0
-\end{eqnarray*}
+\end{eqnarray\*}
 \right.
 $$
 在公式较为复杂的时候，我们会采用更为简单的方式表示。
@@ -70,12 +70,16 @@ $$
 
 概率质量函数：
 $$
-\text{Mu}(\pmb{x}|n,\theta)=\left(\begin{array}{c}n\\x_1,\dots, x_K\end{array}\right)\prod_{j=1}^K\theta^x_j
+\text{Mu}(\pmb{x}|n,\theta)=\left(
+\begin{array}
+{c}n \\\\
+x\_1,\dots, x\_K
+\end{array}\right)\prod\_{j=1}^K\theta^x\_j
 $$
 
 其中：
 $$
-\left(\begin{array}{c}n\\x_1,\dots, x_K\end{array}\right) \triangleq \frac{n!}{x_1!x_2!\dots x_K!}
+\left(\begin{array}{c}n\\\\x_1,\dots, x_K\end{array}\right) \triangleq \frac{n!}{x_1!x_2!\dots x_K!}
 $$
 
 当$n=1$时，多项分布称为**类别分布**。
@@ -132,12 +136,12 @@ $$
 {% note info %}
 上述概率密度函数也可以写成
 $$
-\text{Dir}(x|\pmb{\alpha}) \triangleq
-\left\{
-\begin{eqnarray*}
-&&\frac{1}{B(\pmb{a})} \prod_{k=1}^K x_k^{\alpha_k-1} \quad & \text{if}\sum_{x=1}^K x_k=1 \\
+\\text{Dir}(x|\\pmb{\\alpha}) \\triangleq
+\\left\\{
+\begin{eqnarray\*}
+&&\frac{1}{B(\pmb{a})} \prod\_{k=1}^K x\_k^{\alpha\_k-1} \quad & \text{if}\sum\_{x=1}^K x\_k=1 \\\\
 &&0 \quad & \text{otherwise}
-\end{eqnarray*}
+\end{eqnarray\*}
 \right.
 $$
 {% endnote %}
