@@ -3,10 +3,27 @@ title: About
 date: 2017-10-26 23:30:41
 ---
 
-## 关于我
-
-我目前是北京理工大学的硕士研究生，主要研究领域为机器学习在网络安全方面的应用。
-
-我对计算机的很多领域都很感兴趣，驱动计算机工作就像搭积木一般有趣。我尝试不将自己局限于某一个领域之中，以获得更好的控制能力。
-
-我在生活中喜爱如飞行器等突破人类固有局限的复杂系统；日本动画等能带给人身心愉悦的事物。
+```javascript
+export default {
+  name: 'Qy Deng',
+  nickname: 'Ayase Niconi',
+  e_mail: 'bitdqy@hotmail.com',
+  education: {
+    master: {
+      school: 'Beijing Institute of Technology',
+      status: 'pursuing'
+      major: 'Control Science and Engineering'
+    },
+    bachelor: {
+      school: 'Beijing Institute of Technology',
+      status: 'finished',
+      major: 'Automation',
+    }
+  },
+  skills: {
+    programmingLanguages: ['JavaScript', 'Python']
+    interestedFields: ['Web Development', 'Machine Learning']
+  },
+  hobbies: ['Anime', 'Cycling']
+}
+```
