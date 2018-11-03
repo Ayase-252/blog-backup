@@ -47,9 +47,9 @@ tags:
 
 为了让接收方方便地定位帧的开头，有四种组成帧的方法：
 
-1.  Byte Count
+1. Byte Count
 2. Flag Bytes with byte stuffing
-3. Flag bits witg byte stuffing
+3. Flag bits with byte stuffing
 4. Physical layer coding violation
 
 ### Byte Count
