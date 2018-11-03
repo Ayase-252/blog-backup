@@ -43,7 +43,7 @@ highlight:
   auto_detect: false
   tab_replace:
 
-theme: next-reloaded
+theme: next
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -75,8 +75,8 @@ pagination_dir: page\
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/Ayase-252/Ayase-252.github.io.git
-
+  repo: https://ACCESS_TOKEN@github.com/Ayase-252/Ayase-252.github.io.git
+  branch: master
 
 #
 # -----------------------------------
