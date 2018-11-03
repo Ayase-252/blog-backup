@@ -43,7 +43,7 @@ highlight:
   auto_detect: false
   tab_replace:
 
-theme: next
+theme: next-reloaded
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
