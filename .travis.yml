@@ -15,8 +15,9 @@ install:
   - hexo generate
 
 script:
-  - hexo lc-counter register $LC_USERNAME $LC_PASSWORD
   - git config user.name "Ayase-252"
   - git config user.email "bitdqy@hotmail.com"
-  - sed -i "s/ACCESS_TOKEN/${ACCESS_TOKEN}/g" ./_config.yml
+  - sed -i "s/ACCESS_TOKEN/${ACCESS_TOKEN}/g" ./_config.yml'
+  - sed -i "s/LC_USERNAME/${LC_USERNAME}/g" ./_config.yml
+  - sed -i "s/LC_PASSWORD/${LC_PASSWORD}/g" ./_config.yml
   - hexo deploy
