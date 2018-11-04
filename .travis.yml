@@ -11,11 +11,12 @@ before_install:
   - npm install
 
 install:
-  - hexo clean --config source/_data/next.yml
-  - hexo generate --config source/_data/next.yml
+  - hexo clean
+  - hexo generate
 
 script:
+  - hexo lc-counter register $LC_USERNAME $LC_PASSWORD
   - git config user.name "Ayase-252"
   - git config user.email "bitdqy@hotmail.com"
   - sed -i "s/ACCESS_TOKEN/${ACCESS_TOKEN}/g" ./source/_data/next.yml
-  - hexo deploy --config source/_data/next.yml
+  - hexo deploy

@@ -77,3 +77,18 @@ deploy:
   type: git
   repo: https://ACCESS_TOKEN@github.com/Ayase-252/Ayase-252.github.io.git
   branch: master
+
+# Hexo Symbol Count Time
+## Docs: https://github.com/theme-next/hexo-symbols-count-time
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+
+leancloud_counter_security:
+  enable_sync: true
+  app_id: MuP85NcHFWw6KGbI5JiAyUpO-gzGzoHsz
+  app_key: QTSeOWxEyLBENCtDpF2HRJqX
+  username: # Will be asked while deploying if is left blank
+  password: # Recommmended to be left blank. Will be asked while deploying if is left blank
