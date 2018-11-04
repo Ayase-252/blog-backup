@@ -18,5 +18,5 @@ script:
   - hexo lc-counter register $LC_USERNAME $LC_PASSWORD
   - git config user.name "Ayase-252"
   - git config user.email "bitdqy@hotmail.com"
-  - sed -i "s/ACCESS_TOKEN/${ACCESS_TOKEN}/g" ./source/_data/next.yml
+  - sed -i "s/ACCESS_TOKEN/${ACCESS_TOKEN}/g" ./_config.yml
   - hexo deploy
