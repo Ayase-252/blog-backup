@@ -2,9 +2,7 @@ language: node_js
 node_js:
   - "10"
 
-cache:
-  directories:
-    - node_modules
+cache: npm
 
 before_install:
   - npm install -g hexo-cli
@@ -17,7 +15,7 @@ install:
 script:
   - git config user.name "Ayase-252"
   - git config user.email "bitdqy@hotmail.com"
-  - sed -i "s/ACCESS_TOKEN/${ACCESS_TOKEN}/g" ./_config.yml'
+  - sed -i "s/ACCESS_TOKEN/${ACCESS_TOKEN}/g" ./_config.yml
   - sed -i "s/LC_USERNAME/${LC_USERNAME}/g" ./_config.yml
   - sed -i "s/LC_PASSWORD/${LC_PASSWORD}/g" ./_config.yml
   - hexo deploy

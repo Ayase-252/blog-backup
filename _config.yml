@@ -93,5 +93,5 @@ leancloud_counter_security:
   enable_sync: true
   app_id: MuP85NcHFWw6KGbI5JiAyUpO-gzGzoHsz
   app_key: QTSeOWxEyLBENCtDpF2HRJqX
-  username: LC_USERUSER # Will be asked while deploying if is left blank
+  username: LC_USERNAME # Will be asked while deploying if is left blank
   password: LC_PASSWORD # Recommmended to be left blank. Will be asked while deploying if is left blank
