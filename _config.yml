@@ -74,12 +74,10 @@ pagination_dir: page\
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  - type: leancloud_counter_security_sync
+  # - type: leancloud_counter_security_sync
   - type: git
     repo: https://ACCESS_TOKEN@github.com/Ayase-252/Ayase-252.github.io.git
     branch: master
-
-  # type: leancloud_counter_security_sync
 
 # Hexo Symbol Count Time
 ## Docs: https://github.com/theme-next/hexo-symbols-count-time
@@ -89,9 +87,9 @@ symbols_count_time:
   total_symbols: true
   total_time: true
 
-leancloud_counter_security:
-  enable_sync: true
-  app_id: MuP85NcHFWw6KGbI5JiAyUpO-gzGzoHsz
-  app_key: QTSeOWxEyLBENCtDpF2HRJqX
-  username: LC_USERNAME # Will be asked while deploying if is left blank
-  password: LC_PASSWORD # Recommmended to be left blank. Will be asked while deploying if is left blank
+# leancloud_counter_security:
+#   enable_sync: true
+#   app_id: MuP85NcHFWw6KGbI5JiAyUpO-gzGzoHsz
+#   app_key: QTSeOWxEyLBENCtDpF2HRJqX
+#   username: LC_USERNAME # Will be asked while deploying if is left blank
+#   password: LC_PASSWORD # Recommmended to be left blank. Will be asked while deploying if is left blank
