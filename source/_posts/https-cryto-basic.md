@@ -1,12 +1,14 @@
 ---
 title: 一文弄懂HTTPS（I）：密码学基础
-categories: "Technology"
 tags:
-    - HTTPS
-    - Web Security
-    - Computer Network
-mathjax: True
+  - HTTPS
+  - Web Security
+  - Computer Network
+categories: Technology
+mathjax: true
+date: 2018-11-15 19:43:35
 ---
+
 
 大家一定在浏览器地址栏的前面见到过一把小锁。
 ![safe icon](safe-icon.png)
