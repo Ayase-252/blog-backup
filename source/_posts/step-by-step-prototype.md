@@ -1,10 +1,12 @@
 ---
 title: Step by Step —— 解密原型链
-categories: Programming
 tags:
-    - Web Development
-    - JavaScript
+  - Web Development
+  - JavaScript
+categories: Programming
+date: 2018-11-22 00:00:58
 ---
+
 
 原型链是JavaScript中的一个核心特性，会在前端面试中经常问道。原型链原理十分简单，但是在面试题里看起来似乎不是那么简单。通过一些不常有的操作，原型链的面试题很容易就可以将人陷入一个迷宫之中无法脱出。只有掌握原型链的基本原理的勇士才能够找出通往出口的道路。
 
