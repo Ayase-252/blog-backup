@@ -93,3 +93,14 @@ symbols_count_time:
 #   app_key: QTSeOWxEyLBENCtDpF2HRJqX
 #   username: LC_USERNAME # Will be asked while deploying if is left blank
 #   password: LC_PASSWORD # Recommmended to be left blank. Will be asked while deploying if is left blank
+
+marked:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: false
+  smartLists: true
+  smartypants: true
+  modifyAnchors: ''
+  autolink: true
