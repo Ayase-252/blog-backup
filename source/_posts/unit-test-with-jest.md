@@ -6,7 +6,7 @@ tags:
   - 单元测试
 categories:
   - Programming
-  - Front-end Development
+  - Front-end
   - JavaScript
 date: 2018-12-09 23:11:30
 ---
