@@ -53,14 +53,24 @@ function _new(F, ...args) {
     const obj = {}
     obj.__proto__ = F.prototype
     const retVal = F.apply(obj, args)
-    return retVal || obj
+    if(!retVal && typeof retVal === 'object') {
+        return retVal
+    }
+    return obj
 }
 ```
 
 总而言之，`new`就干了三件事情：
 1. 生成一个继承自`F.prototype`的新对象`obj`；
 2. 在新对象`obj`上调用构造函数`F`；
-3. 如果构造函数有返回值，返回返回值，如果没有返回值，返回构造的对象`obj`。
+3. 如果构造函数有返回值，**且返回值是一个对象**，返回返回值，如果不满足以上情况，返回构造的对象`obj`。
+
+{% note warning %}
+`new`操作符在构造函数返回对象的时候会将其当作`new`操作符的结果返回。见[new](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new)。
+
+2018/12/18修改
+{% endnote %}
+
 
 构造函数一般没有返回值。但是在有返回值的情况下注意区别，可能这里要考。
 
