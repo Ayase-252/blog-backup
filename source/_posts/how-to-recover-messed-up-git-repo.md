@@ -1,11 +1,13 @@
 ---
 title: 如何拯救坏掉的Git Repository——记一次git“事故”
-categories:
-  - Programming
 tags:
   - Git
   - 版本控制
+categories:
+  - Programming
+date: 2019-01-10 00:01:19
 ---
+
 
 1 月的北京风和日丽。我做好了一个需求，估摸着该提 PR 合并到主仓库了。
 于是，我准备和主仓库`master`分支`rebase`一下，然后整理一下 commit 记录。临近下班了，
