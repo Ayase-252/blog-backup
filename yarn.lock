@@ -1372,7 +1372,8 @@ hexo-server@^0.2.0:
 
 hexo-symbols-count-time@^0.4.4:
   version "0.4.4"
-  resolved "http://registry.npm.taobao.org/hexo-symbols-count-time/download/hexo-symbols-count-time-0.4.4.tgz#c5bad76d445d7e0a1ee8a46c7ad23349bc162c1d"
+  resolved "https://registry.npm.taobao.org/hexo-symbols-count-time/download/hexo-symbols-count-time-0.4.4.tgz#c5bad76d445d7e0a1ee8a46c7ad23349bc162c1d"
+  integrity sha1-xbrXbURdfgoe6KRsetIzSbwWLB0=
 
 hexo-util@^0.6.0:
   version "0.6.3"
