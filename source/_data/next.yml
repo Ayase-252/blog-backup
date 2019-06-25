@@ -626,6 +626,7 @@ needmoreshare2:
 # Google Analytics
 google_analytics:
   tracking_id: UA-85059083-2
+  localhost_ignored: true
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
