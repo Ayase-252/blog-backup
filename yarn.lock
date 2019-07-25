@@ -1885,6 +1885,11 @@ lodash@^4.1.0, lodash@^4.13.1, lodash@^4.17.4, lodash@^4.2.1:
   version "4.17.4"
   resolved "http://registry.npm.taobao.org/lodash/download/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
+lodash@^4.17.15:
+  version "4.17.15"
+  resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  integrity sha1-tEf2ZwoEVbv+7dETku/zMOoJdUg=
+
 loose-envify@^1.0.0:
   version "1.3.1"
   resolved "http://registry.npm.taobao.org/loose-envify/download/loose-envify-1.3.1.tgz#d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848"
@@ -2887,6 +2892,11 @@ string_decoder@~1.0.3:
   resolved "http://registry.npm.taobao.org/string_decoder/download/string_decoder-1.0.3.tgz#0fc67d7c141825de94282dd536bec6b9bce860ab"
   dependencies:
     safe-buffer "~5.1.0"
+
+stringstream@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/stringstream/download/stringstream-1.0.0.tgz#2f0b37e8beae208166560e75700a656beb379ab6"
+  integrity sha1-Lws36L6uIIFmVg51cApla+s3mrY=
 
 stringstream@~0.0.4, stringstream@~0.0.5:
   version "0.0.5"
