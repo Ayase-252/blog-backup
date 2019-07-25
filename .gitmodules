@@ -1,4 +1,4 @@
 [submodule "themes/next-reloaded"]
 	path = themes/next-reloaded
 	url = https://github.com/theme-next/hexo-theme-next.git
-  branch = v7.1.2
+  branch = v7.2.0

@@ -86,6 +86,7 @@ symbols_count_time:
   time: true
   total_symbols: true
   total_time: true
+  exclude_codeblock: false
 
 # leancloud_counter_security:
 #   enable_sync: true
