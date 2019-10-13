@@ -1,9 +1,10 @@
 ---
 title: 更快的字符串复制方法
-categories:
-  - Technique
 tags:
   - Algorithm
+categories:
+  - Technique
+date: 2019-10-14 00:31:38
 mathjax: true
 ---
 
@@ -45,14 +46,14 @@ function repeatStrByIteration(source, times) {
 每一次改变它都需要创建一个新的`string`对象出来。
 所以我们优化的方向是如何尽可能地减少两个字符串相加操作。
 
-在迭代实现中，对于\\(times = n\\)，我们需要相加`n`次。
+在迭代实现中，对于$times = n$，我们需要相加`n`次。
 联想到二分查找，一个很自然的想法就是——我们可以将目标字符串*“对折”*起来相加，
 比如，我们要重复 10 次`a`，可以通过`'aaaaa' + 'aaaaa'`得到最后的字符串，
 这里需要 1 次加法，然后为了构造`aaaaa`，我们可以通过`aa+aaa`，需要 1 次加法，
 `aa`可以分解为`a+a`，需要 1 次加法，最后构造`aaa`，可以分解为`a+aa`，需要 1 次加法。
 可以看到，构造整个目标字符串`aaaaaaaaaa`所需要的加法次数，从 10 次下降到了 4 次。
 
-可以通过二叉树的性质证明我们的算法的时间复杂度是\\(O(\log n)\\)的（二叉树的高度）。
+可以通过二叉树的性质证明我们的算法的时间复杂度是$O(\log n)$的（二叉树的高度）。
 实现如下：
 
 ```javascript
@@ -89,7 +90,7 @@ function measurePerf(func) {
   return performance.now() - startTime
 }
 
-function repeatStrByIteration(source, times) {
+function repeatByIteration(source, times) {
   let res = ''
   for (let i = 0; i < times; i++) {
     res += source
@@ -97,13 +98,13 @@ function repeatStrByIteration(source, times) {
   return res
 }
 
-function repeatStrByBinaryJoin(source, times) {
+function repeatByBinaryJoin(source, times) {
   if (times === 0) {
     return ''
   } else if (times === 1) {
     return source
   } else {
-    let res = repeatStrByBinaryJoin(source, Math.floor(times / 2))
+    let res = repeatByBinaryJoin(source, Math.floor(times / 2))
     res += res
     if (times % 2 !== 0) {
       res += source
@@ -117,13 +118,13 @@ const repeatTimes = 10000000
 
 console.log(
   `repeat by iteration: ${measurePerf(() =>
-    repeatStrByIteration(strToRepeat, repeatTimes)
+    repeatByIteration(strToRepeat, repeatTimes)
   )}ms`
 )
 
 console.log(
   `repeat by binary join: ${measurePerf(() =>
-    repeatStrByBinaryJoin(strToRepeat, repeatTimes)
+    repeatByBinaryJoin(strToRepeat, repeatTimes)
   )}ms`
 )
 ```
@@ -139,4 +140,4 @@ repeat by binary join: 0.3501009941101074ms
 
 ## 总结
 
-通过本文，我们使用二分技巧成功地将复制字符串这个工作的复杂度从\\(O(n)\\)降低到了\\(O(\log n)\\)。
+通过本文，我们使用二分技巧成功地将复制字符串这个工作的复杂度从$O(n)$降低到了$O(\log n)$。
