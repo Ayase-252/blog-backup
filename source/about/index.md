@@ -12,12 +12,12 @@ export default {
   education: {
     master: {
       school: 'Beijing Institute of Technology',
-      status: 'pursuing'
+      status: 'completed'
       major: 'Control Science and Engineering'
     },
     bachelor: {
       school: 'Beijing Institute of Technology',
-      status: 'finished',
+      status: 'completed',
       major: 'Automation',
     }
   },
@@ -25,6 +25,6 @@ export default {
     programmingLanguages: ['JavaScript', 'Python']
     interestedFields: ['Web Development', 'Machine Learning']
   },
-  hobbies: ['Anime', 'Cycling']
+  hobbies: ['Anime', 'Cycling', 'Virtual YouTuber']
 }
 ```
