@@ -28,3 +28,6 @@ export default {
   hobbies: ['Anime', 'Cycling', 'Virtual YouTuber']
 }
 ```
+
+博客可以现已启用[评论邮箱通知](https://github.com/DesertsP/Valine-Admin)。
+如果有任何问题的话可以在对应文章下的评论栏进行评论，我会收到邮件通知然后及时回复~
