@@ -18,9 +18,9 @@ jobs:
       with:
         node-version: '14'
     - name: Install Hexo
-      run: yarn global add hexo-cli
+      run: npm i -g hexo-cli
     - name: Install Dependencies
-      run: yarn
+      run: npm install
     - name: Config Theme Plugin
       run: |
         cd themes/next-reloaded
