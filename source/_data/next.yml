@@ -50,7 +50,7 @@ theme: next-reloaded
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
 
@@ -138,7 +138,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: 'programming, technology, anime, game'
+keywords: "programming, technology, anime, game"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -154,7 +154,7 @@ footer:
   icon:
     name: user
     animated: false
-    color: '#808080'
+    color: "#808080"
 
   # If not defined, will be used `author` from Hexo main config.
   copyright:
@@ -278,8 +278,6 @@ avatar:
   url: /uploads/avatar.webp
   # If true, the avatar would be dispalyed in circle.
   rounded: true
-  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
-  opacity: 1
   # If true, the avatar would be rotated with the cursor.
   rotated: false
 
@@ -302,7 +300,6 @@ creative_commons:
   post: false
 
 sidebar:
-  # Sidebar Position, available value: left | right (only for Pisces | Gemini).
   position: left
   #position: right
 
@@ -374,14 +371,15 @@ symbols_count_time:
   wpm: 275
 
 codeblock:
-  # Manual define the border radius in codeblock
-  # Leave it empty for the default 1
-  border_radius:
   # Add copy button on codeblock
   copy_button:
     enable: true
     # Show text copy result
     show_result: true
+  # Code Highlight theme
+  # Available values: normal | night | night eighties | night blue | night bright
+  # See: https://github.com/chriskempson/tomorrow-theme
+  highlight_theme:
 
 related_posts:
   enable: false
@@ -414,16 +412,9 @@ related_posts:
 mobile_layout_economy: false
 
 # Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
-android_chrome_color: '#222'
+android_chrome_color: "#222"
 
-# Custom Logo.
-# !!Only available for Default Scheme currently.
-# Options:
-#   enabled: [true/false] - Replace with specific image
-#   image: url-of-image   - Images's url
-custom_logo:
-  enable: false
-  image:
+custom_logo: #/uploads/custom-logo.jpg
 
 # Code Highlight theme
 # Available value:
@@ -455,7 +446,7 @@ font:
   # Font options:
   # `external: true` will load this font family from `host` above.
   # `family: Times New Roman`. Without any quotes.
-  # `size: xx`. Use `px` as unit.
+  # `size: x.x`. Use `em` as unit. Default: 1 (16px)
 
   # Global font settings used on <body> element.
   global:
@@ -563,13 +554,6 @@ valine:
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
 #livere_uid: your uid
-
-# Baidu Share
-# Available value:
-#    button | slide
-# Warning: Baidu Share does not support https.
-#baidushare:
-##  type: button
 
 # NeedMoreShare2
 # Dependencies: https://github.com/theme-next/theme-next-needmoreshare2
@@ -735,7 +719,7 @@ algolia_search:
   labels:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}"
-    hits_stats: '${hits} results found in ${time} ms'
+    hits_stats: "${hits} results found in ${time} ms"
 
 # Local search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
@@ -790,7 +774,7 @@ tabs:
 # Dependencies: https://github.com/theme-next/theme-next-reading-progress
 reading_progress:
   enable: true
-  color: '#000'
+  color: "#000"
   height: 2px
 
 #! ---------------------------------------------------------------
@@ -824,33 +808,17 @@ motion:
 fancybox: false
 
 # Added switch option for separated repo in 6.0.0.
-# Dependencies: https://github.com/theme-next/theme-next-fastclick
-fastclick: false
-
-# Added switch option for separated repo in 6.0.0.
 # Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload
 lazyload: false
 
 # Progress bar in the top during page loading.
 # Dependencies: https://github.com/theme-next/theme-next-pace
-pace: false
-# Themes list:
-#pace-theme-big-counter
-#pace-theme-bounce
-#pace-theme-barber-shop
-#pace-theme-center-atom
-#pace-theme-center-circle
-#pace-theme-center-radar
-#pace-theme-center-simple
-#pace-theme-corner-indicator
-#pace-theme-fill-left
-#pace-theme-flash
-#pace-theme-loading-bar
-#pace-theme-mac-osx
-#pace-theme-minimal
-# For example
-# pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-minimal
+pace:
+  enable: false
+  # Themes list:
+  # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
+  # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
+  theme:
 
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
@@ -923,10 +891,6 @@ vendors:
   # See: http://fancyapps.com/fancybox/
   fancybox:
   fancybox_css:
-
-  # Internal version: 1.0.6
-  # See: https://github.com/ftlabs/fastclick
-  fastclick:
 
   # Internal version: 1.9.7
   # See: https://github.com/tuupola/jquery_lazyload
