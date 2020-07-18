@@ -20,7 +20,7 @@ jobs:
     - name: Install Hexo
       run: npm i -g hexo-cli
     - name: Install Dependencies
-      run: npm install
+      run: yarn
     - name: Config Theme Plugin
       run: |
         cd themes/next-reloaded
