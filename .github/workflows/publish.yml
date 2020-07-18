@@ -37,7 +37,7 @@ jobs:
         hexo generate
     - name: Publish
       run: |
-        git config user.name "Ayase-252"
-        git config user.email "bitdqy@hotmail.com"
+        git config --global user.name "Ayase-252"
+        git config --global user.email "bitdqy@hotmail.com"
         sed -i "s/ACCESS_TOKEN/${{ secrets.PUBLISH_TOKEN }}/g" ./_config.yml
         hexo deploy
