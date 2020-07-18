@@ -35,5 +35,5 @@ jobs:
       run: |
         git config user.name "Ayase-252"
         git config user.email "bitdqy@hotmail.com"
-        sed -i "s/ACCESS_TOKEN/${{ secrets.GITHUB_ACCESS_TOKEN }}" ./_config.yml
+        sed -i "s/ACCESS_TOKEN/${{ secrets.PUBLISH_TOKEN }}" ./_config.yml
         hexo deploy
