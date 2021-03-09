@@ -45,7 +45,7 @@ git 仓库引入 `path` 指向的一个 git 配置文件中配置。
 
 ```gitconfig
 [includeIf "<keyword>:<data>"]
-path = path/to/gitconfig
+  path = path/to/gitconfig
 ```
 
 其中支持的 keyword 有：
@@ -76,7 +76,7 @@ vim ~/.gitconfig
 ```gitconfig
 # ~/corp-projects/ 下面的所有仓库引入 `~/crop-projects/.gitconfig` 中的配置
 [includeIf "gitdir:~/corp-projects/"]
-path = ~/corp-projects/.gitconfig
+  path = ~/corp-projects/.gitconfig
 ```
 
 最后创建公司项目统一的配置文件：
@@ -87,10 +87,10 @@ vim ~/corp-projects/.gitconfig
 
 ```gitconfig
 [user]
-name = <Your Name>
-email = <Your Email>
+  name = <Your Name>
+  email = <Your Email>
 
 [http]
-# 代理地址，如果公司项目需要代理才能够存取，填写此项；如果不需要，则不用这一行
-proxy = <Proxy URL>
+  # 代理地址，如果公司项目需要代理才能够存取，填写此项；如果不需要，则不用这一行
+  proxy = <Proxy URL>
 ```
