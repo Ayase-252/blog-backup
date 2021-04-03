@@ -6,28 +6,37 @@ comments: false
 
 ```javascript
 export default {
-  name: 'Qy Deng',
+  name: 'Qingyu Deng',
   nickname: 'Ayase Niconi',
-  e_mail: 'bitdqy@hotmail.com',
-  education: {
-    master: {
-      school: 'Beijing Institute of Technology',
-      status: 'completed'
-      major: 'Control Science and Engineering'
-    },
-    bachelor: {
+  email: 'i@ayase-lab.com',
+  education: [
+    {
       school: 'Beijing Institute of Technology',
       status: 'completed',
-      major: 'Automation',
+      degree: "Master of Science in Engineering",
+      since: 2016,
+      graduatedAt: 2019,
+      major: 'Control Science and Engineering'
+    }, {
+      school: 'Beijing Institute of Technology',
+      status: 'completed',
+      degree: "Bachelor in Engineering",
+      since: 2012,
+      graduatedAt: 2016,
+      major: 'Automation'
     }
-  },
+  ],
+  openSourceProjects: [{
+    project: "Node.js",
+    role: "Triager",
+    since: 2021
+  }],
   skills: {
-    programmingLanguages: ['JavaScript', 'Python']
+    programmingLanguages: ['JavaScript', 'Python', "TypeScript"],
     interestedFields: ['Web Development', 'Machine Learning']
   },
   hobbies: ['Anime', 'Cycling', 'Virtual YouTuber']
 }
 ```
 
-博客可以现已启用[评论邮箱通知](https://github.com/DesertsP/Valine-Admin)。
-如果有任何问题的话可以在对应文章下的评论栏进行评论，我会收到邮件通知然后及时回复~
+如果有任何问题，欢迎[邮箱](mailto:i@ayase-lab.com)沟通。
