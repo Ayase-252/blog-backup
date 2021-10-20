@@ -1,0 +1,65 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+## Custom Config:
+favicon:
+  small: /images/favicon-16x16.png
+  medium: /images/favicon-32x32.png
+  apple_touch_icon: /images/apple-touch-icon.png
+  safari_pinned_tab: /images/apple-touch-icon.png
+
+scheme: Gemini
+
+darkmode: true
+
+menu:
+  home: / || home
+  about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
+  archives: /archives/ || archive
+  #schedule: /schedule/ || calendar
+  sitemap: /sitemap.xml || sitemap
+  #commonweal: /404/ || heartbeat
+
+avatar:
+  # Replace the default image and set the url here.
+  url: /uploads/avatar.webp
+  # If true, the avatar will be dispalyed in circle.
+  rounded: true
+  # If true, the avatar will be rotated with the cursor.
+  rotated: false
+
+social:
+  GitHub: https://github.com/Ayase-252 || github
+  E-Mail: mailto:bitdqy@hotmail.com || envelope
+  Twitter: https://twitter.com/ayase_niconi || twitter
+
+follow_me:
+  RSS: /atom.xml || rss
+
+footer:
+  # Specify the date when the site was setup. If not defined, current year will be used.
+  since: 2016
+
+math:
+  per_page: false
+
+  # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
+  mathjax:
+    enable: true
+    # See: https://mhchem.github.io/MathJax-mhchem/
+    mhchem: false
+
+  # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.
+  katex:
+    enable: false
+    # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
+    copy_tex: false
+
+google_analytics:
+  tracking_id: UA-85059083-2
+  # By default, NexT will load an external gtag.js script on your site.
+  # If you only need the pageview feature, set the following option to true to get a better performance.
+  only_pageview: false
