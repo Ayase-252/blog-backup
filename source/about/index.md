@@ -15,20 +15,20 @@ export default {
       status: 'completed',
       degree: "Master of Science in Engineering",
       since: 2016,
-      graduatedAt: 2019,
+      graduatedIn: 2019,
       major: 'Control Science and Engineering'
     }, {
       school: 'Beijing Institute of Technology',
       status: 'completed',
       degree: "Bachelor in Engineering",
       since: 2012,
-      graduatedAt: 2016,
+      graduatedIn: 2016,
       major: 'Automation'
     }
   ],
   openSourceProjects: [{
     project: "Node.js",
-    role: "Triager",
+    role: ["Collaborator", "Triager"],
     since: 2021
   }],
   skills: {
