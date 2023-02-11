@@ -1226,10 +1226,10 @@ hexo-symbols-count-time@^0.6.0:
   dependencies:
     hexo-util "1.4.0"
 
-hexo-theme-next@^8.8.0:
-  version "8.8.0"
-  resolved "https://registry.npmmirror.com/hexo-theme-next/download/hexo-theme-next-8.8.0.tgz"
-  integrity sha1-j4WRgDzYlWek/ypweF+WfVPOULI=
+hexo-theme-next@^8.14.2:
+  version "8.14.2"
+  resolved "https://r.cnpmjs.org/hexo-theme-next/-/hexo-theme-next-8.14.2.tgz#a7fc2170a2d370b7b7a6ac2927ddce323cc08554"
+  integrity sha512-XF0xocZmXNTqqPZJuBkwfDFyR51kDFWFxdp9xNN1voUduGROYrTTHaM0IFklhdK0cAjIX0EG+FndtU/5SHZkMg==
 
 hexo-util@1.4.0:
   version "1.4.0"
