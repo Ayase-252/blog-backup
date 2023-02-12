@@ -27,7 +27,7 @@ jobs:
         hexo generate
     - name: Publish
       run: |
-        export $GITHUB_TOKEN=${secrets.PUBLISH_TOKEN}
+        export $GITHUB_TOKEN=$secrets.PUBLISH_TOKEN
         git config --global user.name "Ayase-252"
         git config --global user.email "bitdqy@hotmail.com"
         hexo deploy
