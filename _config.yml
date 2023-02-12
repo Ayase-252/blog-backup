@@ -77,7 +77,6 @@ pagination_dir: page
 deploy:
   - type: git
     repo: https://github.com/Ayase-252/Ayase-252.github.io.git
-    token: ACCESS_TOKEN
     branch: master
     name: Qingyu Deng
     email: i@ayase-lab.com
