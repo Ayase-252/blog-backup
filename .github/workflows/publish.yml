@@ -13,10 +13,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: actions/setup-node@v1
       with:
         node-version: '16'
+    - uses: webfactory/ssh-agent@v0.7.0
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
     - name: Install Hexo
       run: npm i -g hexo-cli
     - name: Install Dependencies
@@ -26,7 +29,5 @@ jobs:
         hexo clean
         hexo generate
     - name: Publish
-      env:
-        GITHUB_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
       run: |
         hexo deploy
