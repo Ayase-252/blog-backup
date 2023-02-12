@@ -77,7 +77,7 @@ pagination_dir: page
 deploy:
   # - type: leancloud_counter_security_sync
   - type: git
-    repo: git@github.com/Ayase-252/Ayase-252.github.io.git
+    repo: git@github.com:Ayase-252/Ayase-252.github.io.git
     token: ACCESS_TOKEN
     branch: master
     name: Qingyu Deng
