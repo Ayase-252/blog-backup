@@ -29,6 +29,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
       run: |
-        git config --global user.name "Ayase-252"
-        git config --global user.email "bitdqy@hotmail.com"
         hexo deploy
