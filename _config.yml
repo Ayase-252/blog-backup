@@ -76,7 +76,7 @@ pagination_dir: page
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    url: git@github.com:Ayase-252/Ayase-252.github.io.git
+    repo: git@github.com:Ayase-252/Ayase-252.github.io.git
     branch: master
     name: Qingyu Deng
     email: i@ayase-lab.com
